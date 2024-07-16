@@ -21,6 +21,7 @@ function QrCodeReader() {
         style={{ height: 240, width: 320 }} // Customize size
         onError={handleError} // Handle errors (optional)
         onScan={handleScan}
+        facingMode="rear"
       />
       <p>Scanned Data: {scannedData}</p>
     </div>
